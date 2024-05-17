@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(241, 236, 228);
+    padding: 20px;
+}
+
+
+/*CABECERA*/
+header {
+    max-width: 1000px;
+    min-height: 130px;
+     margin: 0 auto;
+     border-radius: 20px  20px 0 0 ;
+ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fceabb+0,f8b500+51,f9e09f+53,fbdf93+100 */
+background: linear-gradient(to bottom,  rgba(252,234,187,1) 0%,rgb(243, 212, 126) 51%,rgba(249,224,159,1) 53%,rgba(251,223,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+#logo{
+    width: 320px;
+    float: left;
+    margin-top: 20px;
+    margin-left:20px; 
+    animation: 1s entradalogo 1;
+}
+
+#logo img{
+    width: 250px;
+    height: 100px;
+}
+
+
+
+#logo img:hover {
+    filter:saturate(10%)
+}
+
+/*CABECERA*/
+
+
+
+/*Menu horizontal*/
+#menu-h {
+    max-width: 1000px;
+    min-height: 50px;
+    background: black;
+    margin: 0 auto;
+}
+
+#menu-h ul{
+    list-style: none;
+    display: flex;
+    justify-content:center ;
+}
+
+
+#menu-h a {
+    color: #fff;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    background: #000;
+    font-family: Impact;
+    font-size: 18px;
+}
+
+
+#menu-h a:hover {
+    background: rgb(128, 128, 243); 
+}
+
+#menu-h ul ul {
+    display: none;
+    position: absolute;
+}
+
+#menu-h ul li:hover ul{
+    display: block; 
+
+}
+
+/*Menu horizontal*/
+
+
+
+
+#banner{
+    max-width: 1000px;
+    min-height: 180px;
+    background: rgb(240, 253, 253);
+    margin: 0 auto; 
+}
+
+
+
+.Slider{
+width: 100%;
+ height: 500px;
+ overflow: hidden;
+}
+
+.Slider ul{
+    display: flex;
+    animation: cambio 15s infinite alternate linear;
+    width: 400%;
+}
+
+.Slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.Slider img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#contenedor{
+    max-width: 1000px;
+    min-height: 700px;
+   background: rgba(188, 188, 204, 0.952);
+    margin: 0 auto;
+}
+
+/*MENU VERTICAL*/
+
+#menu-v{
+    margin-top: 10px;
+    width: 300px;
+    min-height: 690px;
+    background: #ccc;
+    float: left;
+}
+
+#menu-v img{
+    height:30px;
+
+}
+
+#menu-v ul {
+    list-style: none;
+    color:aliceblue;
+    padding: 10ppx;
+}
+
+#menu-v a {
+    display: block;
+    color: antiquewhite;
+    background: #000;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-family: Impact;
+    font-size: 18px;
+ 
+}
+
+#menu-v a:hover{
+    background: rgb(135, 135, 252);
+}
+
+#menu-v a:hover img{
+    animation: 1s rotacion 1;
+}
+
+
+
+/*MENU VERTICAL*/
+
+
+
+/*CONTENIDO*/
+#contenido{
+    width: 700px;
+    min-height: 700px;
+    background: #fff;
+    float:right ;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#contenido h2{
+    
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#contenido p{
+    margin-bottom: 20px;
+    font-family: Arial;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.img-izq{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    border: 2px inset rgb(0, 0, 0);
+    padding: 5px;
+
+}
+
+.img-dw {
+    width: 154px;
+    height: 150px;
+    border-radius: 18px;
+    float: right;
+    margin-right: 20px;
+}
+
+.img-rig {
+    width: 180px;
+    height: 150px;
+    border-radius: 18px;
+    float: left;
+    margin-right: 20px;
+}
+
+/*CONTENIDO*/
+
+
+
+/*PIE DE PAGINA*/
+
+footer{
+    max-width: 1000px;
+    background: #000;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+    color: antiquewhite;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-size: 18px;
+}
+
+
+footer img{
+    height: 32px;
+}
+
+footer li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+/*PIE DE PAGINA*/
+
+
+ 
+
+/*KEYFRAMES*/
+
+@keyframes entradalogo {
+    0%{
+        transform: translateY(-200px) ;
+    }
+}
+
+@keyframes rotacion {
+
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes cambio{
+    0% { margin-left:0;}
+    20% { margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left:-300%;}
+
+}
+
+
+/*KEYFRAMES*/
